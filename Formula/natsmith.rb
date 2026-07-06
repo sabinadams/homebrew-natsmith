@@ -5,21 +5,21 @@
 class Natsmith < Formula
   desc "CLI tooling for NATS and JetStream"
   homepage "https://sabinadams.github.io/natsmith/"
-  version "1.2.3"
+  version "1.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.3/natsmith_1.2.3_darwin_amd64.tar.gz"
-      sha256 "bd5dd3cc2408d86f0f84de462b1d45378011ff48af4549920a22e625e5bef80f"
+      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.4/natsmith_1.2.4_darwin_amd64.tar.gz"
+      sha256 "27fab0732714a0f1d5fdf60a56d428e0a907450700008115b4da9413194d82db"
 
       define_method(:install) do
         bin.install "natsmith"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.3/natsmith_1.2.3_darwin_arm64.tar.gz"
-      sha256 "aff015871b35d2fb286369d1137a35bcf31fee9407a0f4c56b553545ea82aec1"
+      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.4/natsmith_1.2.4_darwin_arm64.tar.gz"
+      sha256 "a21a62496d279cd363e65c305fface03f30cb8c5264f424dba91c38e5b120e5b"
 
       define_method(:install) do
         bin.install "natsmith"
@@ -29,15 +29,15 @@ class Natsmith < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.3/natsmith_1.2.3_linux_amd64.tar.gz"
-      sha256 "d54bbaa86365686ba774b5b4cb05195a8f9a135cc05d4dc1e01ca6d90a6afe53"
+      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.4/natsmith_1.2.4_linux_amd64.tar.gz"
+      sha256 "5cf104af838d64b1ffc04a441993524168d595cbcf8a853c6d6f5be537f68f33"
       define_method(:install) do
         bin.install "natsmith"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.3/natsmith_1.2.3_linux_arm64.tar.gz"
-      sha256 "c104c0f05ed0dc3f57512065cef156ab75f0d0935e363823e86bf2f0b1c48258"
+      url "https://github.com/sabinadams/natsmith/releases/download/v1.2.4/natsmith_1.2.4_linux_arm64.tar.gz"
+      sha256 "f09caffed263d4e3c9b20e13c2f3ee26ecc0d3109caade0f3fd5aaae0771e0f8"
       define_method(:install) do
         bin.install "natsmith"
       end
